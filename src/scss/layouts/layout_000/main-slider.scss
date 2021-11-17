@@ -1,0 +1,25 @@
+.slider-item{
+  // max-width: 320px;
+  // width: 100%;
+  position: relative;
+  &__wrapper img{
+    max-width: 300px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+  &__title{
+    z-index: 4;
+  }
+  &__subtitle{
+    z-index: 4;
+  }
+  &__description{
+    z-index: 4;
+  }
+  &__btn{
+    z-index: 4;
+  }
+}

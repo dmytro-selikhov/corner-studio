@@ -18,8 +18,19 @@ html {
 body {
   font-family: $baseFontFamily;
   // background: red;
+
 }
 
 h1 {
   font-weight: $mediumFontWeight;
+}
+.wrapper{
+  max-width: 1440px;
+  width: 100%;
+  padding: 12px;
+  margin: 0 auto;
+}
+.background-img{
+  background: url(../../../i/bg__top.jpg) no-repeat;
+  background-size: cover;
 }

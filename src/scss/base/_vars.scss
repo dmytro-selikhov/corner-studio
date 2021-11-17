@@ -7,7 +7,7 @@ $baseFontFamily: 'Ubuntu', sans-serif;
 $mediumFontWeight: 500;
 
 
-$mobilePadding: (12px / $baseFontSize) * 1rem;
+$mobilePadding: 12px;
 $desktopPadding: 1rem;
 
 
@@ -21,3 +21,5 @@ $usersFilesPath: "../userfiles/";
  // Colors
 $black: #000000;
 $white: #ffffff;
+$headerColor: #020111;
+$mainBlue: #00B2FF;
