@@ -1,0 +1,95 @@
+.services-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services-item{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 140px;
+    &__link{
+     cursor: pointer;
+     text-decoration: none;
+     color: $white;
+     padding: 5px;
+     font-size: 10px;
+     text-transform: uppercase;
+     font-weight: 700;
+    }
+    &__box{
+      max-width: 120px;
+      width: 100%;
+      max-height: 120px;
+      height: 100%;
+      margin: 0 auto;
+    }
+    &__img{
+      width:100%;
+    }
+}
+
+
+// &__link:last-child{
+//   margin-right: 0;
+// }
+// &__programm{
+//  position: relative;
+// }
+// &__programm::before{
+//  display: block;
+//  content: '';
+//  position: absolute;
+//  max-width: 125px;
+//  width: 100%;
+//  height: 100%;
+//  top: -65px;
+//  left: 50px;
+//  background: url(../../../i/icons/books.png) no-repeat;
+//  background-size: contain;
+// }
+// &__enrollment{
+//  position: relative;
+// }
+// &__enrollment::before{
+//   display: block;
+//   content:'';
+//   position: absolute;
+//   max-width: 125px;
+//   width: 100%;
+//   height: 100%;
+//   top: -65px;
+//   left: 50px;
+//   background: url(../../../i/icons/write.png) no-repeat;
+//   background-size: contain;
+// }
+// &__perspectives{
+//   position: relative;
+// }
+// &__perspectives::before{
+//   display: block;
+//   content:'';
+//   position: absolute;
+//   width: 125px;
+//   height: 100%;
+//   top: -65px;
+//   left: 78px;
+//   background: url(../../../i/icons/Mortarboard.png) no-repeat;
+//   background-size: contain;
+// }
+// &__services{
+//  position: relative;
+// }
+// &__services::before{
+// display: block;
+// content:'';
+// position: absolute;
+// width: 125px;
+// height: 100%;
+// top: -65px;
+// left: 70px;
+// background: url(../../../i/icons/work.png) no-repeat;
+// background-size: contain;
+// }

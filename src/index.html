@@ -35,7 +35,7 @@
 
           <div class="background-img">
             <div class="divider"></div>
-              <div class="wrapper">
+              <!-- <div class="wrapper"> -->
 
                 <section class="main-slider">        <!-- main-slider -->
                   <div class="slider-items">
@@ -48,7 +48,7 @@
                         <a class="slider-item__btn">Записаться на обучение</a>
                       </div>
                       <div class="slider-item__wrapper">
-                        <img  class="slider-item__img" src="i/charackter__top.png" alt="slider img">
+                        <!-- <img  class="slider-item__img" src="i/charackter__top.png" alt="slider img"> -->
                       </div>
                     </div>
 
@@ -74,19 +74,31 @@
                 <section class="services">      <!-- services -->
                   <div class="services-items">
 
-                    <div class="services-item">
-                      <a href="#" class="services-item__link">Программа курса</a>
+                    <div class="services-item services-item__programm">
+                      <div class="services-item__box">
+                        <img class="services-item__img" src="i/icons/books.png" alt="books">
+                      </div>
+                      <a href="#" class="services-item__link ">Программа курса</a>
                     </div>
 
-                    <div class="services-item">
+                    <div class="services-item services-item__enrollment">
+                      <div class="services-item__box">
+                        <img class="services-item__img" src="i/icons/write.png" alt="write">
+                      </div>
                       <a href="#" class="services-item__link">Запись на курсы</a>
                     </div>
 
-                    <div class="services-item">
+                    <div class="services-item services-item__perspectives">
+                      <div class="services-item__box">
+                        <img class="services-item__img" src="i/icons/mortarboard.png" alt="Mortarboard">
+                      </div>
                       <a href="#" class="services-item__link">Перспективы учеников</a>
                     </div>
 
-                    <div class="services-item">
+                    <div class="services-item services-item__services">
+                      <div class="services-item__box">
+                        <img class="services-item__img" src="i/icons/work.png" alt="work">
+                      </div>
                       <a href="#" class="services-item__link">Услуги Cornerstudio</a>
                     </div>
 
@@ -94,14 +106,19 @@
                 </section>      <!-- /services -->
 
                 <section class="timer">        <!-- timer -->
-                  <p class="timer__title">До начала обучения <span class="timer__span">осталось</span> :</p>
-
-                  <div class="timer-box">
-                    <p class="timer-box__day">10</p>
-                    <p class="timer-box__hour">10</p>
-                    <p class="timer-box__min">10</p>
-                    <p class="timer-box__sec">59</p>
-                  </div>
+                  <div class="wrapper"><!-- wrapper -->
+                    <p class="timer__title">До начала обучения <span class="timer__span">осталось</span> :</p>
+                  
+                    <div class="timer-box">
+                      <p class="timer-box__item timer-box__day">10</p>
+                      <p class="timer-box__dots">:</p>
+                      <p class="timer-box__item timer-box__hour">10</p>
+                      <p class="timer-box__dots">:</p>
+                      <p class="timer-box__item timer-box__min">10</p>
+                      <p class="timer-box__dots">:</p>
+                      <p class="timer-box__item timer-box__sec">59</p>
+                    </div>
+                  </div><!-- /wrapper -->
                 </section>        <!-- /timer -->
 
                 <section class="programs">        <!-- programs -->
@@ -124,7 +141,7 @@
                   </div>
                 </section>        <!-- /programs -->
 
-            </div> <!-- /wrapper -->
+             <!-- /wrapper -->
           </div>
 
     <!--  JavaScript here -->
