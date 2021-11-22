@@ -24,9 +24,19 @@ body {
 h1 {
   font-weight: $mediumFontWeight;
 }
-.wrapper{
+p {
+  margin: 0;
+}
+.wrapper-fluid{
   max-width: 1440px;
   width: 100%;
+  padding: 12px;
+  margin: 0 auto;
+  box-sizing:border-box;
+}
+.wrapper{
+  // max-width: 1440px;
+  // width: 100%;
   padding: 12px;
   margin: 0 auto;
   box-sizing:border-box;
