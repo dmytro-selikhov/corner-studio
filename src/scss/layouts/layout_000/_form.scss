@@ -1,0 +1,76 @@
+.form{
+  position: relative;
+  background: -webkit-linear-gradient(90deg, rgb(0, 0, 151), rgb(204, 0, 106));
+  background: -moz-linear-gradient(90deg, rgb(0, 0, 151), rgb(204, 0, 106));
+  background: linear-gradient(90deg, rgb(0, 0, 151), rgb(204, 0, 106));
+}
+.form::after{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  background: $mainBlue;
+}
+.form-left{
+  &__title{
+    text-transform: uppercase;
+    color:$white;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.8rem;
+    font-weight: 700;
+    font-family: $baseFontFamily;
+    padding: 10px 20px 10px 20px;
+  }
+  &__text{
+    padding: 5px;
+    color: $white;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+    font-family: $robotoFontFamily;
+  }
+}
+
+.form-right{
+  &__box{
+    max-width: 300px;
+
+  }
+  &__btn{
+    margin: 0 auto;
+    display: block;
+    padding: 15px 15px;
+    background: #00B2FF;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+.form-right input{
+  width:79%;
+  margin: 0 auto;
+  padding: 10px 20px 10px 40px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  color: $white;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.form-right input::placeholder{
+  color: $white;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: left;
+  font-weight: 300;
+  font-family: $robotoFontFamily;
+}
+
+
+
+
