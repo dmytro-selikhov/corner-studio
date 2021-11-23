@@ -3,11 +3,14 @@
   background: -webkit-linear-gradient(90deg, rgb(0, 0, 151), rgb(204, 0, 106));
   background: -moz-linear-gradient(90deg, rgb(0, 0, 151), rgb(204, 0, 106));
   background: linear-gradient(90deg, rgb(0, 0, 151), rgb(204, 0, 106));
+  // margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .form::after{
+  content:'';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
   height: 5px;
   width: 100%;
   background: $mainBlue;
