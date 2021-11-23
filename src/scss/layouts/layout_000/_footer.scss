@@ -2,4 +2,96 @@
   background: url(../../../i/fire_blue.png) no-repeat;
   background-size: cover;
 }
-
+.footer-logo{
+  &__title{
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+    font-family: $baseFontFamily;
+    color:$white;
+  }
+  &__wrapper{
+    padding: 10px 0;
+  }
+}
+.footer-top{
+  padding: 15px;
+  margin-bottom: 20px;
+  &__list{
+  list-style-type: none;
+  padding-left: 0;
+  }
+  &__item{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 500;
+    font-family: $baseFontFamily;
+  }
+  &__item a{
+    text-transform: uppercase;
+    color:$white;
+    text-decoration: none;
+  }
+  &__social{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__facebook{
+    position: relative;
+  }
+  &__facebook::before{
+    position: absolute;
+    content:'';
+    top: 0;
+    left: 0;
+    background: url(../../../i/social/facebook.svg) no-repeat;
+    width:18px;
+    height: 18px;
+  }
+  &__instagram{
+    position: relative;
+  }
+  &__instagram::before{
+    position: absolute;
+    content:'';
+    top: 0;
+    left: 0;
+    background: url(../../../i/social/instagram.svg) no-repeat;
+    width:18px;
+    height: 18px;
+  }
+  &__twitter{
+    position: relative;
+  }
+  &__twitter::before{
+    position: absolute;
+    content:'';
+    top: 0;
+    left: 0;
+    background: url(../../../i/social/tw.svg) no-repeat;
+    width:18px;
+    height: 18px;
+  }
+  &__youtube{
+    position: relative;
+  }
+  &__youtube::before{
+    position: absolute;
+    content:'';
+    top: 0;
+    left: 0;
+    background: url(../../../i/social/youtube.svg) no-repeat;
+    width:22px;
+    height: 18px;
+  }
+}
+.footer-bottom{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: $baseFontFamily;
+  color:$mainBlue;
+  padding: 15px;
+  background: #080345;
+}
