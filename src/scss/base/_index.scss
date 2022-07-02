@@ -7,4 +7,6 @@
 @import "normalize";
 @import "mixins/flexmixins";
 @import "mixins/utilites";
-
+*{
+  box-sizing: border-box;
+}

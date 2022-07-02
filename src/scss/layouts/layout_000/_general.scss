@@ -20,6 +20,9 @@ body {
   // background: red;
 
 }
+body._lock {
+  overflow: hidden;// Отключает возможность прокрутки сайта при открытом меню
+}
 
 h1 {
   font-weight: $mediumFontWeight;
@@ -44,4 +47,7 @@ p {
 .background-img{
   background: url(../../../i/bg__top.jpg) no-repeat;
   background-size: cover;
+}
+.main {
+  margin-top: 95px;
 }

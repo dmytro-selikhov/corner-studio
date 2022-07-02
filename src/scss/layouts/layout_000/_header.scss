@@ -1,27 +1,252 @@
 .header{
-  // padding: 10px;
-  background: $headerColor;
-  position: relative;;
+  padding: 10px;
+  position: fixed; // Будет прилеплен к верху
+  top: 0; // Впрлотную к верху
+  left: 0; // Вплотную с левой стороны
+  width: 100%; // Ширина 100%
+  z-index: 10; // Расположение с индексом 10
+  background: $headerColor; // Фон для шапки
+  border-bottom: 5px solid $mainBlue;
 }
-.header::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 5px;
-  width: 100%;
-  background: $mainBlue;
+
+.header__container{
+  max-width: 1200px; // Ограничиваем ширину
+  margin: 0 auto; // Центрируем по средине
+  display: flex; // Создаем флекс контейнер
+  padding: 0 15px; // Паддинги для контейнера
+  align-items: center; // Выравнивание по центру
+  justify-content: space-between; //Разделяем логотип и меню, меню оказывается справа в шапке
+  min-height: 70px; // Минимальная высота шапки
 }
-.menu{
+
+.header__logo{
+  max-width: 170px; // Максимальный размер для логотипа
+  width: 100%; // Заполняем ширину на 100%
+  z-index: 5; // Расположение с индексом 5
+}
+
+.menu__icon{
   display: none;
 }
-.logo{
-  &__wrapper{
-    padding: 10px 0 10px 50px;
-    max-width: 170px;
-    width: 100%;
+
+.logo__wrapper{
+  padding: 10px 0 5px 0;
+  max-width: 170px;
+  width: 100%;
+}
+
+.logo__title{
+  display: block; // Задаем свойства блочных элементов
+  color: #fff; // Задаем цвет
+  font-size: 14px; // Задаем размер шрифта
+}
+
+.menu__list > li { // Обращаемся к li первого уровня
+  position: relative; // Позиция relative т.к. меню второго уровня будем абсолютно позиционировать относительно меню первого уровня
+  margin: 0px 0px 0px 20px; // Внешний отступ слева 20рх
+}
+
+.menu__link{
+  color: #fff; // Задаем цвет для пунктов меню
+  font-size: 14px; // Размер шрифта
+  font-weight: 700; // Толщина шрифта
+  text-decoration: none; // Убираем подчеркивание
+  text-transform: uppercase; // Весь текст заглавными буквами
+}
+
+.menu__link:hover{ 
+  color:$mainBlue; // Замена цвета при наведении
+}
+
+.menu__sub-list {
+  position: absolute; // Абсолютное позиционирование
+  top: 100%; // 
+  right: 0; // Прижимаем к правому краю
+  background-color: $headerColor; // Задаем фон плашки
+  padding: 15px; // Задаем паддинги
+  min-width: 200px; // Минимальная ширина 200рх
+} 
+
+.menu__sub-list li {
+  margin: 0px 0px 10px 0px; // Задаем отступы по 10рх снизу
+}
+
+.menu__sub-list li:last-child {
+  margin: 0px 0px 0px 0px; // Убираем отступ у последнего элемента
+}
+
+.menu__sub-link {
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu__sub-link:hover{
+  color:$mainBlue; // Замена цвета при наведении
+  // text-decoration: underline;
+}
+
+.menu__arrow {
+  display: none; // Будем показывать на устройствах с touch-screen
+}
+/*-------------------------------------*/
+body._pc .menu__list > li:hover .menu__sub-list{ //Когда у body присутствует класс _pc мы обращаемся к menu__list > li в состоянии наведения(hover) menu__sub-list
+  opacity: 1; //Непрозрачность ставим в 1
+  visibility: visible; // Включаем возможность взаимодействия с меню
+  transform: translate(0px, 0px); // Возвращаем положение в 0
+  pointer-events: all; // Разрешаем любое взаимодействие мышью с нашим объектом. Нужно для того, что бы в момент ухода мышки с подменю, и попытки быстрого возвращения обратно не было возможности взаимодействовать с подменю. Только при наведении на пункт в основном меню
+}
+
+body._touch .menu__list > li {
+  display: flex; // Создаем флекс контейнер
+  align-items: center; // Ровняем по центру элементы
+}
+
+body._touch.menu__link {
+  flex: 1 1 auto; // Ссылку делаем на всю ширину
+}
+
+body._touch .menu__arrow { // Создаем треугольник с помощью borderов
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0px 0px 0px 5px; // Создаем отступ слева от пункта меню
+  transition: transform 0.3s ease 0s; // Анимируем стрелку при открытии/закрытии меню
+  border-left: 5px solid transparent; //Создаем треугольник через  border
+  border-right: 5px solid transparent; //Создаем треугольник через  border
+  border-top:  10px solid #fff; //Создаем треугольник через  border
+}
+
+body._touch .menu__list > li._active .menu__sub-list{ //Когда у body присутствует класс _touch мы обращаемся к menu__list > li с классом _active  menu__sub-list
+  opacity: 1; //Непрозрачность ставим в 1
+  visibility: visible; // Включаем возможность взаимодействия с меню
+  transform: translate(0px, 0px); // Возвращаем положение в 0
+  pointer-events: all; // Разрешаем любое взаимодействие мышью с нашим объектом. Нужно для того, что бы в момент ухода мышки с подменю, и попытки быстрого возвращения обратно не было возможности взаимодействовать с подменю. Только при наведении на пункт в основном меню
+}
+
+body._touch .menu__list > li._active .menu__arrow { // Анимируем стрелку
+  transform: rotate(-180deg);  // Переворачиваем стрелку на 180 градусов(вверх ногами)
+}
+
+/*-------------------------------------*/
+@media (min-width: 767px) {
+  .menu__list { //Создаем флекс контейнер для меню, начинаем с медиа запросов, применятся на экранах, которые шире 767
+    display: flex; // Создаем флекс контейнер
+    align-items: center; // Располагаем элементы по центру.
   }
-  &__title{
+  .menu__list > li { // Обращаемся к первым дочерним li(первого уровня)
+    padding: 10px 0; // Добавляем паддинги для верха и низа. Нужны для увеличения площади подложки и возможности перехода мышки на подменю. Если не сделать padding то меню будет исчезать прежде, чем мы на него наведем курсор 
+  }
+  .menu__sub-list {
+    transform: translate(0px, 10%); // Немного опускаем наше меню вниз на 10%
+    opacity: 0; // Непрозрачность ставим в 0
+    visibility: hidden; // Отключаем возможность взаимодействия с меню
+    pointer-events: none; // Запрещает любое взаимодействие мышью с нашим объектом. 
+    transition: all 0.3s ease 0s; // Магия перехода
+  }
+}
+
+@media (max-width: 767px) {
+  .menu__icon{
+    z-index: 5; //Что бы было выше плашки перекрытия фона
+    display: block; // Включаем блочное отображение
+    position: relative; // Позицию релетив задаем
+    width: 30px; // Ширина
+    height: 18px; // Высота
+    cursor: pointer; // При наведении курсор преврашается в руку
+  }
+  .menu__icon span, // Рисуем иконку бургера
+  .menu__icon::before,
+  .menu__icon::after{
+    left: 0; // Слева 0
+    position: absolute; // Позиция абсолютная
+    height: 10%; //Высота 10% от родителя
+    width: 100%; // Ширина 100% от родитедя
+    transition: all 0.3s ease 0s; // Переход
+    background-color: #fff; // Цвет белый
+  }
+
+  .menu__icon::before, 
+  .menu__icon::after{
+    content: ""; // Добавляем свойство контент, что бы они отобразились на странице
+  }
+
+  .menu__icon::before{
+    top: 0;
+  }
+
+  .menu__icon::after{
+    bottom: 0;
+  }
+
+  .menu__icon span{
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .menu__icon._active span{
+    transform: scale(0) translate(0px, -50%); // Убираем среднюю линию в иконке бургера
+  }
+  .menu__icon._active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%); // Нагинаем верхнюю линию по диагонали
+  }
+  .menu__icon._active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%); // Нагинаем нижнюю линию по диагонали
+  }
+  .menu__body{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.9); // Фон меню
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s; //Выезжает слева 
+   // transition: left 0.3s ease 0s; //Выезжает слева 
+    overflow: auto; // Дает возможность проскролить к непоместившимся позициям в меню
+  }
+
+  .menu__body._active{
+    left: 0;
+  }
+
+  .menu__body::before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 95px;
+    background-color:$headerColor;
+    z-index: 2;
+  }
+  .menu__list > li {
+    flex-wrap: wrap; // Возможность перехода на новую строку
+    margin: 0px 0px 30px 0px;
+  }
+  .menu__list > li:last-child{
+    margin-bottom: 0px;
+  }
+  .menu__list > li._active .menu__sub-list{
+    display: block;
+  }
+
+  .menu__link{
+    font-size: 22px; //Увеличиваем шрифт меню в мобильной версии
+  }
+  .menu__sub-list {
+    position: relative;
+    background-color: #000;
+    flex: 1 1 100%; // Растяним на всю ширину 
+    margin: 20px 0px 0px 0px;
     display: none;
+  }
+  .menu__sub-link{
+    font-size: 18px;
+    color: #fff;
   }
 }

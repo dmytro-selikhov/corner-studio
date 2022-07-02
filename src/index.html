@@ -9,26 +9,54 @@
   </head>
   <body>
     <header class="header">    <!-- header -->
-      <div class="wrapper">
-
-        <div class="logo">
+      <div class="header__container">
+        <div class="header__logo">
           <div class="logo__wrapper">
             <a href="#" class="logo__link"><img src="i/logo.svg" alt="logo img" class="logo__img"></a>
           </div>
-          <p class="logo__title">зD, design,animatio and brst practice</p>
+          <p class="logo__title">зD, design, animation</p>
         </div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Все о 3D</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Оплата</a></li>
-          </ul>  
-        </nav>
-
+        <div class="header__menu menu">
+          <div class="menu__icon"><!--Оболочка для иконки-->
+            <span></span>
+          </div>
+          <nav class="menu__body"><!--Общая оболочка для меню-->
+            <ul class="menu__list">
+              <li>
+                <a data-goto=".main" href="#" class="menu__link">Главная</a>
+              </li>
+              <li>
+                <a data-goto=".team" href="#" class="menu__link">О нас</a>
+              </li>
+              <li>
+                <a data-goto=".programs" href="#" class="menu__link">Все о 3D</a>
+              </li>
+              <li>
+                <a data-goto=".footer" href="#" class="menu__link">Контакты</a>
+                <span class="menu__arrow"></span>  <!-- Добавляем спан для иконки на планшетных устройствах -->
+                <ul class="menu__sub-list">
+                  <li>
+                    <a href="#" class="menu__sub-link">Тест 1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__sub-link">Тест 2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__sub-link">Тест 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a data-goto=".reviews" href="#" class="menu__link">Отзывы</a>
+              </li>
+              <li>
+                <a data-goto=".form" href="#" class="menu__link">Обучение</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
+
     </header>    <!-- /header -->
 
     <main class="main">    <!-- main -->
@@ -48,7 +76,7 @@
                         <a class="slider-item__btn">Записаться на обучение</a>
                       </div>
                       <div class="slider-item__wrapper">
-                        <!-- <img  class="slider-item__img" src="i/charackter__top.png" alt="slider img"> -->
+                        <img  class="slider-item__img" src="i/charackter__top.png" alt="slider img">
                       </div>
                     </div>
 
@@ -298,5 +326,6 @@
     <!--  JavaScript here -->
     <!-- <script src="js/app.js"></script> -->
     <script src="js/script.js"></script>
+    <script src="js/isMobile.js"></script>
   </body>
 </html>

@@ -43,7 +43,7 @@ h1 {
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -367,4 +367,7 @@ textarea {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+}
+ul{
+  padding: 0;
 }
