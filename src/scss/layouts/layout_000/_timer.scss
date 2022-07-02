@@ -3,7 +3,10 @@
   background-size: cover;
   background-position: center;
   text-align: center;
+  margin-bottom: 50px;
+  // margin: 0 auto;
   &__title{
+    // display: block;
     font-size: 12px;
     color: $white;
     text-transform: uppercase;
@@ -17,10 +20,17 @@
   }
 }
 
+.timer__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 70px;
+  align-items: center;
+}
 .timer-box{
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   &__item{
     padding: 5px;
     padding-top: 10px;
