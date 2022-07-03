@@ -1,4 +1,6 @@
 .team{
+  max-width: 1000px;
+  margin: 0 auto;
   &__title{
     text-transform: uppercase;
     color:$mainBlue;
@@ -8,6 +10,7 @@
     font-weight: 700;
     font-family: $baseFontFamily;
     margin-bottom: 40px;
+
   }
   &__text{
     color:$white;
@@ -21,19 +24,21 @@
 }
 
 .team-slider{
-  // display: flex;
-  // justify-content: space-between;
-  // flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
   &__item{
     padding: 10px;
-    max-width: 95px;
+    max-width: 130px;
     width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   &__photo{
-    max-width: 75px;
+    max-width: 90px;
     // height: 100%;
   }
   &__photo img{
