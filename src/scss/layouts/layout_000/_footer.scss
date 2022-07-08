@@ -2,22 +2,33 @@
   background: url(../../../i/fire_blue.png) no-repeat;
   background-size: cover;
 }
-.footer-logo{
-  &__title{
-    display: block;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-    font-weight: 500;
-    font-family: $baseFontFamily;
-    color:$white;
-  }
-  &__wrapper{
-    padding: 10px 0;
+.footer-logo__title{
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: $baseFontFamily;
+  color:$white;
+}
+
+.footer-logo__wrapper{
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+.footer-top{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  &__logo{
+    max-width: 300px;
+    width: 100%;
   }
 }
 .footer-top{
-  padding: 15px;
-  margin-bottom: 20px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   &__list{
   list-style-type: none;
   padding-left: 0;
@@ -29,11 +40,22 @@
     font-family: $baseFontFamily;
   }
   &__item a{
+    display: block;
     text-transform: uppercase;
     color:$white;
     text-decoration: none;
   }
+  &__item a:hover{
+    color: $mainBlue;
+  }
+  &__info{
+    display: block;
+    text-transform: uppercase;
+    color:$white;
+  }
   &__social{
+    max-width: 150px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
   }
@@ -56,9 +78,9 @@
     position: absolute;
     content:'';
     top: 0;
-    left: 0;
+    left: 30px;
     background: url(../../../i/social/instagram.svg) no-repeat;
-    width:18px;
+    width: 18px;
     height: 18px;
   }
   &__twitter{
@@ -68,9 +90,9 @@
     position: absolute;
     content:'';
     top: 0;
-    left: 0;
+    left: 58px;
     background: url(../../../i/social/tw.svg) no-repeat;
-    width:18px;
+    width: 18px;
     height: 18px;
   }
   &__youtube{
@@ -79,10 +101,10 @@
   &__youtube::before{
     position: absolute;
     content:'';
-    top: 0;
-    left: 0;
+    top: 1px;
+    left: 80px;
     background: url(../../../i/social/youtube.svg) no-repeat;
-    width:22px;
+    width: 22px;
     height: 18px;
   }
 }

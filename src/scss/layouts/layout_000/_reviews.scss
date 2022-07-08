@@ -1,6 +1,8 @@
 .reviews{
+  padding: 30px;
   background: url(../../../i/bg__bottom.jpg) no-repeat;
   background-size: cover;
+  background-position: 0px 0px;
   &__title{
     text-transform: uppercase;
     color:$white;
@@ -25,12 +27,13 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-right: 25px;
+    min-width: 0; // Обязательно указываем флекс элементу
   }
   &__text{
     color: $white;
     font-size: 0.7rem;
     line-height: 1.1rem;
-    // margin-bottom: 20px;
   }
   &__wrap{
     max-width: 85px;
@@ -58,3 +61,74 @@
   }
 }
 
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+  align-items: flex-start; // Прижимает слайды к верху. Опция нужна для слайдов разной высоты в связке с adaptiveHeight:true в файле js
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+// Для стилизации конкретного слайдера переносим классы этого слайдера и стилизуем их в связке с классами слик слайдера
+
+
+
+.reviews-slider .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-slider .slick-dots li{
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.reviews-slider .slick-dots li.slick-active button{
+  background-color: $mainBlue;
+}
+
+/* Элемент точки */
+.reviews-slider .slick-dots li button{
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid $mainBlue;
+  border-radius: 50%;
+}

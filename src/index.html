@@ -70,34 +70,20 @@
                 <div class="slider-item">
                   <div class="slider-item__box">
                     <div class="slider-item__wrap"><img class="slider-item__title" src="i/Corner-Studio__title.svg" alt="title"></div>
-                    <p class="slider-item__subtitle">У нас работают опытные специалисты в сфере 3D моделирования, дизайна, анимации и визуализации. </p>
-                    <p class="slider-item__description">Одним из направлений студии является обучение специалистов, предоставляя им возможность развивать в себе таланты с целью дальнейшего трудоустройства и карьерного роста.</p>
-                    <a class="slider-item__btn">Записаться на обучение</a>
+                    <div class="slider-item__sub-box">
+                        <p class="slider-item__subtitle">У нас работают опытные специалисты в сфере 3D моделирования, дизайна, анимации и визуализации. </p>
+                        <p class="slider-item__description">Одним из направлений студии является обучение специалистов, предоставляя им возможность развивать в себе таланты с целью дальнейшего трудоустройства и карьерного роста.</p>
+                        <a class="slider-item__btn">Записаться на обучение</a>
+                    </div>
                   </div>
                   <div class="slider-item__wrapper">
                     <img  class="slider-item__img" src="i/charackter__top.png" alt="slider img">
                   </div>
                 </div>
                 
-                <!-- <div class="slider-item">
-                  <p class="slider-item__title">Corner-Studio </p>
-                  <p class="slider-item__subtitle">У нас работают опытные специалисты в сфере 3D моделирования, дизайна, анимации и визуализации. </p>
-                  <p class="slider-item__description">Одним из направлений студии является обучение специалистов, предоставляя им возможность развивать в себе таланты с целью дальнейшего трудоустройства и карьерного роста.</p>
-                  <a class="slider-item__btn">Записаться на обучение</a>
-                  <img  class="slider-item__img" src="i/charackter__top.png" alt="slider img">
-                </div>
-                
-                <div class="slider-item">
-                  <p class="slider-item__title">Corner-Studio </p>
-                  <p class="slider-item__subtitle">У нас работают опытные специалисты в сфере 3D моделирования, дизайна, анимации и визуализации. </p>
-                  <p class="slider-item__description">Одним из направлений студии является обучение специалистов, предоставляя им возможность развивать в себе таланты с целью дальнейшего трудоустройства и карьерного роста.</p>
-                  <a class="slider-item__btn">Записаться на обучение</a>
-                  <img  class="slider-item__img" src="i/charackter__top.png" alt="slider img">
-                </div> -->
-                
               </div>
+              <div class="divider"></div>
             </section>        <!-- /main-slider -->
-            <div class="divider"></div>
 
                 <section class="services">      <!-- services -->
                   <div class="services-items">
@@ -137,15 +123,23 @@
                   <div class="wrapper timer-box"><!-- wrapper -->
                     <div class="timer__wrapper">
                       <p class="timer__title">До начала обучения <span class="timer__span">осталось</span> :</p>
-                      
-                      <div class="timer-box">
-                        <p class="timer-box__item timer-box__day">10</p>
+<!--                       
+                      <div id="group" class="timer-box">
+                       <span id="d" class="badge badge-success mr-3 p-3"></span>
+                       <span id="h" class="badge badge-success p-3 mr-3"></span>
+                       <span id="m" class="badge badge-success mr-3 p-3"></span>
+                       <span id="s" class="badge badge-success p-3"></span>
+                      </div>
+                    </div> -->
+
+                    <div class="timer-box">
+                        <p id="d" class="timer-box__item timer-box__day">10</p>
                         <p class="timer-box__dots">:</p>
-                        <p class="timer-box__item timer-box__hour">10</p>
+                        <p id="h" class="timer-box__item timer-box__hour">10</p>
                         <p class="timer-box__dots">:</p>
-                        <p class="timer-box__item timer-box__min">10</p>
+                        <p id="m" class="timer-box__item timer-box__min">10</p>
                         <p class="timer-box__dots">:</p>
-                        <p class="timer-box__item timer-box__sec">59</p>
+                        <p id="s" class="timer-box__item timer-box__sec">59</p>
                       </div>
                     </div>
                        
@@ -222,6 +216,7 @@
 
           <section class="reviews">        <!-- reviews -->
             <div class="wrapper"><!-- wrapper -->
+
                   <p class="reviews__title">Отзывы учеников</p>
           
                   <div class="reviews-slider">
@@ -236,45 +231,50 @@
                           </div>
                         </div>
           
-                        <!-- <div class="reviews-slider__item">
+                        <div class="reviews-slider__item">
                           <p class="reviews-slider__text">Мечтали профессионально создавать графику на компьютере? У вас есть возможность научиться этому в студии дизайна и графики «Corner-Studio». Здесь проводится обучение работы в программах 3DS MAX, MAYA, Blender, AutoCAD, GIMP и в других. Если вы не можете заниматься очно, запишитесь на дистанционное обучение, курсов которого в «Corner-Studio» тоже очень много. Кроме того, помимо образовательного направления здесь производится разработка 3D-контента, в том числе анимации и роликов. Вы можете заказать моделирование сцены с разными условиями по выгодной цене. Очень рекомендую, если Вы искали специалистов, то Вы их нашли!</p>
-                        <div class="reviews-slider__box">
-                          <div class="reviews-slider__wrap">
-                            <img class="reviews-slider__img" src="i/review-1.png" alt="review img">
+                          <div class="reviews-slider__box">
+                            <div class="reviews-slider__wrap">
+                              <img class="reviews-slider__img" src="i/review-2.png" alt="review img">
+                            </div>
+                            <p class="reviews-slider__name">Земляной Илья</p>
                           </div>
-                          <p class="reviews-slider__name">Земляной Илья</p>
-                        </div>
-                      </div>
+                       </div>
 
                       <div class="reviews-slider__item">
-                        <p class="reviews-slider__text">Мечтали профессионально создавать графику на компьютере? У вас есть возможность научиться этому в студии дизайна и графики «Corner-Studio». Здесь проводится обучение работы в программах 3DS MAX, MAYA, Blender, AutoCAD, GIMP и в других. Если вы не можете заниматься очно, запишитесь на дистанционное обучение, курсов которого в «Corner-Studio» тоже очень много. Кроме того, помимо образовательного направления здесь производится разработка 3D-контента, в том числе анимации и роликов. Вы можете заказать моделирование сцены с разными условиями по выгодной цене. Очень рекомендую, если Вы искали специалистов, то Вы их нашли!</p>
-                      <div class="reviews-slider__box">
-                        <div class="reviews-slider__wrap">
-                          <img class="reviews-slider__img" src="i/review-1.png" alt="review img">
+                        <p class="reviews-slider__text"> Прежде всего хочу отметить классную атмосферу и поддержку со стороны преподавателй. Это круто, когда что-то не получается и ты стесняешься спросить, но наставник видит заминку и находит подход. Здесь проводится обучение работы в программах 3DS MAX, MAYA, Blender, AutoCAD, GIMP и в других. Если вы не можете заниматься очно, запишитесь на дистанционное обучение, курсов которого в «Corner-Studio» тоже очень много. Очень рекомендую, если Вы искали специалистов, то Вы их нашли!</p>
+                        <div class="reviews-slider__box">
+                          <div class="reviews-slider__wrap">
+                            <img class="reviews-slider__img" src="i/review-3.png" alt="review img">
+                          </div>
+                          <p class="reviews-slider__name">Марченко Наталья</p>
                         </div>
-                        <p class="reviews-slider__name">Марченко Наталья</p>
-                      </div>
-                    </div> -->
+                     </div>
              
                   </div>
+
                 </div>   <!-- wrapper -->
           </section>        <!-- /reviews -->
 
           <section class="form">        <!-- form -->
             <div class="wrapper"><!-- wrapper -->
-              <div class="form-left">
-                <p class="form-left__title">Хочу записаться на обучение</p>
-                <p class="form-left__text">Оставляйте заявку и мы свяжимся с Вами в ближайшее время!</p>
-              </div>
-      
-              <div class="form-right">
-                <form class="form-right__box" action="">
-                  <input type="text" placeholder="Ваше имя">
-                  <input type="text" placeholder="Номер телефона">
-                  <input type="text" placeholder="Email">
-                  <a class="form-right__btn" href="#">Записаться на обучение</a>
-                </form>
-              </div>
+
+          <div class="form-box">
+            <div class="form-left">
+              <p class="form-left__title">Хочу записаться на обучение</p>
+              <p class="form-left__text">Оставляйте заявку и мы свяжимся с Вами в ближайшее время!</p>
+            </div>
+    
+            <div class="form-right">
+              <form class="form-right__box" action="">
+                <div class="form-right__inputs"><input type="text" placeholder="Ваше имя"></div>
+                <div class="form-right__inputs"><input type="tel" placeholder="Номер телефона"></div>
+                <div class="form-right__inputs"><input type="email" placeholder="Email"></div>
+                <a class="form-right__btn" href="#">Записаться на обучение</a>
+              </form>
+            </div>
+          </div>
+
             </div><!-- wrapper -->
           </section>        <!-- /form -->
 
@@ -290,6 +290,7 @@
                 </div>
                   <p class="logo__title footer-logo__title">Студия обучению 3D моделирования, дизайна, анимации и визуализации.</p>
               </div>
+
               <nav class="footer-top__menu">
                 <ul class="footer-top__list">
                   <li class="footer-top__item"><a href="#" class="footer-top__link">Главная</a></li>
@@ -311,12 +312,16 @@
                 </ul>  
               </nav>
       
-              <div class="footer-top__social">
-                <a href="https://www.facebook.com/selikhov.dmytro/" class="footer-top__facebook"></a>
-                <a href="https://www.instagram.com/dmytro.selikhov/" class="footer-top__instagram"></a>
-                <a href="https://twitter.com/dmytro_selikhov" class="footer-top__twitter"></a>
-                <a href="https://www.youtube.com/" class="footer-top__youtube"></a>
-              </div>
+
+              <nav class="footer-top__social">
+                <ul class="footer-top__list">
+                  <div class="footer-top__item"><p class="footer-top__info">Мы в соцсетях</p></div>
+                  <div class="footer-top__item"><a class="footer-top__facebook" href="https://www.facebook.com/selikhov.dmytro/"></a></div>
+                  <div class="footer-top__item"><a class="footer-top__instagram" href="https://www.instagram.com/dmytro.selikhov/"></a></div>
+                  <div class="footer-top__item"><a class="footer-top__twitter" href="https://twitter.com/dmytro_selikhov"></a></div>
+                  <div class="footer-top__item"><a class="footer-top__youtube" href="https://www.youtube.com/"></a></div>
+                </ul>  
+              </nav>
       
             </div>
       
@@ -330,7 +335,10 @@
     <!-- <script src="js/app.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/app.js"></script>
     <script src="js/isMobile.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/top_btn.js"></script>
   </body>
 </html>

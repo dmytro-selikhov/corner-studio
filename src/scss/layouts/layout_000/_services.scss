@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .services-item{
   padding: 10px;

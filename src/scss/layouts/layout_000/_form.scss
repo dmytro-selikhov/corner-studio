@@ -3,8 +3,6 @@
   background: -webkit-linear-gradient(90deg, rgb(0, 0, 151), rgb(204, 0, 106));
   background: -moz-linear-gradient(90deg, rgb(0, 0, 151), rgb(204, 0, 106));
   background: linear-gradient(90deg, rgb(0, 0, 151), rgb(204, 0, 106));
-  // margin-bottom: 20px;
-  padding-bottom: 20px;
 }
 .form::after{
   content:'';
@@ -15,34 +13,46 @@
   width: 100%;
   background: $mainBlue;
 }
+.form-box{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
 .form-left{
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
   &__title{
     text-transform: uppercase;
     color:$white;
-    font-size: 1.5rem;
-    text-align: center;
-    line-height: 1.8rem;
+    font-size: 45px;
+    text-align: left;
+    line-height: 50px;
     font-weight: 700;
     font-family: $baseFontFamily;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 0px;
   }
   &__text{
-    padding: 5px;
+    padding: 5px 5px 5px 0px;
     color: $white;
-    font-size: 1rem;
-    line-height: 1.3rem;
+    font-size: 25px;
+    line-height: 30px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
     font-weight: 300;
     font-family: $robotoFontFamily;
   }
 }
 
 .form-right{
-  &__box{
-    max-width: 300px;
-
-  }
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
   &__btn{
     margin: 0 auto;
     display: block;
@@ -52,19 +62,20 @@
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
   }
 }
-.form-right input{
-  width:79%;
-  margin: 0 auto;
-  padding: 10px 20px 10px 40px;
+.form-right__inputs{
+  width:100%;
+  padding: 15px;
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
+  border-radius: 10px;
   margin-bottom: 10px;
   color: $white;
   font-weight: 300;
   font-size: 0.8rem;
 }
+
 .form-right input::placeholder{
   color: $white;
   font-size: 0.8rem;
@@ -74,6 +85,11 @@
   font-family: $robotoFontFamily;
 }
 
+.form-right input:focus{
+  color: $white;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
 
 
 

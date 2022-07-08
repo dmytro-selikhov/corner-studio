@@ -8,10 +8,7 @@
 .programs-item{
   max-width: 334px;
   width: 100%;
-  margin: 0 auto;
-    // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-around;
+  margin: 0 auto;;
   margin-bottom: 35px;
   padding: 0px 15px 0px 15px;
   &__box{
@@ -60,6 +57,7 @@
     color: #ffffff;
     border-radius: 5px;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
