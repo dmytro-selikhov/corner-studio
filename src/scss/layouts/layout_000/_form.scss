@@ -56,40 +56,64 @@
   &__btn{
     margin: 0 auto;
     display: block;
+    max-width: 850px;
+    width: 100%;
     padding: 15px 15px;
     background: #00B2FF;
     color: #ffffff;
     border-radius: 5px;
     text-align: center;
-    text-decoration: none;
+    cursor: pointer;
+    // text-decoration: none;
     text-transform: uppercase;
   }
 }
 .form-right__inputs{
   width:100%;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  margin-bottom: 10px;
-  color: $white;
-  font-weight: 300;
-  font-size: 0.8rem;
+  // padding: 15px;
+  // background: rgba(255, 255, 255, 0.3);
+  // border-radius: 10px;
+  // margin-bottom: 10px;
+  // color: $white;
+  // font-weight: 500;
+  // font-size: 18px;
 }
 
 .form-right input::placeholder{
   color: $white;
-  font-size: 0.8rem;
-  line-height: 1rem;
+  font-size: 18px;
+  line-height: 22px;
   text-align: left;
-  font-weight: 300;
+  font-weight: 500;
   font-family: $robotoFontFamily;
+}
+.form-right input{
+  color: $white;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .form-right input:focus{
   color: $white;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.3);
+}
+input{
+  width:94%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: $white;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-
+input.error{
+  border: 1px solid red;
+}
 

@@ -25,12 +25,12 @@
   display: flex;
   justify-content: space-around;
   &__box{
-    max-width: 950px;
+    max-width: 600px;
     padding-top: 36px; 
     margin-bottom: 30px
   }
   &__wrapper{
-    display: none;
+    display: block;
     max-width: 500px;
     width: 100%;
     object-fit: cover;
@@ -46,7 +46,7 @@
     margin-bottom: 20px;
   }
   &__subtitle{
-    max-width: 950px;
+    max-width: 450px;
     font-size: 22px;
     $baseFontFamily: 'Ubuntu', sans-serif;
     $mediumFontWeight: 500;
@@ -55,7 +55,7 @@
     margin-bottom: 20px;
   }
   &__description{
-    max-width: 950px;
+    max-width: 380px;
     display: block;
     color: #fff;
     font-size: 12px;
@@ -75,10 +75,6 @@
     position: relative;
     margin-bottom: 15px;
     text-transform: uppercase;
-    text-decoration: none;
-  }
-  &__btn:hover{
-    text-decoration: underline;
   }
   &__sub-box{
     padding-left: 15px;

@@ -24,9 +24,9 @@
     padding: 20px;
     background:rgba(255,255,255, 0.3);
     border-radius: 15px;
-    // display: flex;
-    // justify-content: space-between;
-    // flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     margin-right: 25px;
     min-width: 0; // Обязательно указываем флекс элементу
   }
@@ -34,7 +34,6 @@
     color: $white;
     font-size: 0.7rem;
     line-height: 1.1rem;
-    margin-bottom: 20px;
   }
   &__wrap{
     max-width: 85px;
@@ -54,7 +53,7 @@
   &__name{
     display: block;
     padding: 5px;
-    text-align: center;
+    text-align: right;
     // margin-right: 10px;
     color: #C4C4C4;
     font-size: 18px;

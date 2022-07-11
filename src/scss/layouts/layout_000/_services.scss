@@ -7,17 +7,21 @@
 }
 .services-item{
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: $white;
+  padding: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
   margin: 0 auto;
   max-width: 140px;
-    &__link{
-     cursor: pointer;
-     text-decoration: none;
-     color: $white;
+    &__par{
+     display: block;
+     text-align: center;
      padding: 5px;
-     font-size: 10px;
+     font-size: 15px;
      text-transform: uppercase;
      font-weight: 700;
     }
@@ -32,69 +36,14 @@
       width:100%;
     }
 }
+
+.services-item:hover{
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid $mainBlue;
+  margin: 0 auto;
+}
 .services{
   // padding-top: 50px;
   margin-bottom: 70px;
 }
-
-// &__link:last-child{
-//   margin-right: 0;
-// }
-// &__programm{
-//  position: relative;
-// }
-// &__programm::before{
-//  display: block;
-//  content: '';
-//  position: absolute;
-//  max-width: 125px;
-//  width: 100%;
-//  height: 100%;
-//  top: -65px;
-//  left: 50px;
-//  background: url(../../../i/icons/books.png) no-repeat;
-//  background-size: contain;
-// }
-// &__enrollment{
-//  position: relative;
-// }
-// &__enrollment::before{
-//   display: block;
-//   content:'';
-//   position: absolute;
-//   max-width: 125px;
-//   width: 100%;
-//   height: 100%;
-//   top: -65px;
-//   left: 50px;
-//   background: url(../../../i/icons/write.png) no-repeat;
-//   background-size: contain;
-// }
-// &__perspectives{
-//   position: relative;
-// }
-// &__perspectives::before{
-//   display: block;
-//   content:'';
-//   position: absolute;
-//   width: 125px;
-//   height: 100%;
-//   top: -65px;
-//   left: 78px;
-//   background: url(../../../i/icons/Mortarboard.png) no-repeat;
-//   background-size: contain;
-// }
-// &__services{
-//  position: relative;
-// }
-// &__services::before{
-// display: block;
-// content:'';
-// position: absolute;
-// width: 125px;
-// height: 100%;
-// top: -65px;
-// left: 70px;
-// background: url(../../../i/icons/work.png) no-repeat;
-// background-size: contain;
-// }

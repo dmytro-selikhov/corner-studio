@@ -1,7 +1,7 @@
 .programs-items{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   padding: 5px 16px 5px 16px;
   margin-bottom: 50px;
 }

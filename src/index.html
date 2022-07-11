@@ -36,13 +36,13 @@
                 <span class="menu__arrow"></span>  <!-- Добавляем спан для иконки на планшетных устройствах -->
                 <ul class="menu__sub-list">
                   <li>
-                    <a href="#" class="menu__sub-link">Тест 1</a>
+                    <a href="#street" class="menu__sub-link">Адрес</a>
                   </li>
                   <li>
-                    <a href="#" class="menu__sub-link">Тест 2</a>
+                    <a href="#phone" class="menu__sub-link">Телефон</a>
                   </li>
                   <li>
-                    <a href="#" class="menu__sub-link">Тест 3</a>
+                    <a href="#email" class="menu__sub-link">Email</a>
                   </li>
                 </ul>
               </li>
@@ -73,7 +73,7 @@
                     <div class="slider-item__sub-box">
                         <p class="slider-item__subtitle">У нас работают опытные специалисты в сфере 3D моделирования, дизайна, анимации и визуализации. </p>
                         <p class="slider-item__description">Одним из направлений студии является обучение специалистов, предоставляя им возможность развивать в себе таланты с целью дальнейшего трудоустройства и карьерного роста.</p>
-                        <a class="slider-item__btn">Записаться на обучение</a>
+                        <a href="#" class="slider-item__btn">Записаться на обучение</a>
                     </div>
                   </div>
                   <div class="slider-item__wrapper">
@@ -88,7 +88,36 @@
                 <section class="services">      <!-- services -->
                   <div class="services-items">
 
-                    <div class="services-item services-item__programm">
+                    <a href="#" class="services-item services-item__programm">
+                      <div class="services-item__box">
+                        <img class="services-item__img" src="i/icons/books.png" alt="books">
+                      </div>
+                      <p class="services-item__par ">Программа курса</p>
+                    </a>
+
+                    <a href="#" class="services-item services-item__enrollment">
+                      <div class="services-item__box">
+                        <img class="services-item__img" src="i/icons/write.png" alt="write">
+                      </div>
+                      <p class="services-item__par">Запись на курсы</p>
+                    </a>
+
+                    <a href="#" class="services-item services-item__perspectives">
+                      <div class="services-item__box">
+                        <img class="services-item__img" src="i/icons/mortarboard.png" alt="Mortarboard">
+                      </div>
+                      <p class="services-item__par">Перспективы учеников</p>
+                    </a>
+
+                    <a href="#" class="services-item services-item__services">
+                      <div class="services-item__box">
+                        <img class="services-item__img" src="i/icons/work.png" alt="work">
+                      </div>
+                      <ap class="services-item__par">Услуги Cornerstudio</ap>
+                    </a>
+
+
+                    <!-- <div class="services-item services-item__programm">
                       <div class="services-item__box">
                         <img class="services-item__img" src="i/icons/books.png" alt="books">
                       </div>
@@ -114,7 +143,7 @@
                         <img class="services-item__img" src="i/icons/work.png" alt="work">
                       </div>
                       <a href="#" class="services-item__link">Услуги Cornerstudio</a>
-                    </div>
+                    </div> -->
 
                   </div>
                 </section>      <!-- /services -->
@@ -153,7 +182,7 @@
                       <p class="programs-item__title">Форма обучения 3D VFX animation</p>
                       <p class="programs-item__subtitle">Дистанционная / Очная</p>
                       <p class="programs-item__descr">Обучение 12 месяцев при оплате полного курса<span class="programs-item__span"> 800</span> $. Ежемесячная оплата<span class="programs-item__span"> 75</span> $.</p>
-                      <a class="programs-item__btn">Записаться на обучение</a>
+                      <a href="#" class="programs-item__btn">Записаться на обучение</a>
                     </div>
                       <div class="programs-item__box">
                         <img src="i/animal.png" alt="animal">
@@ -162,7 +191,7 @@
                       <p class="programs-item__title">Форма обучения компас Solidworks</p>
                       <p class="programs-item__subtitle">Дистанционная / Очная</p>
                       <p class="programs-item__descr">Обучение 4 месяца при оплате полного курса<span class="programs-item__span"> 250</span> $. Ежемесячная оплата<span class="programs-item__span"> 70</span> $.</p>
-                      <a class="programs-item__btn">Записаться на обучение</a>
+                      <a href="#" class="programs-item__btn">Записаться на обучение</a>
                     </div>
 
                   </div>
@@ -265,12 +294,12 @@
               <p class="form-left__text">Оставляйте заявку и мы свяжимся с Вами в ближайшее время!</p>
             </div>
     
-            <div class="form-right">
+            <div class="form-right js-form">
               <form class="form-right__box" action="">
-                <div class="form-right__inputs"><input type="text" placeholder="Ваше имя"></div>
-                <div class="form-right__inputs"><input type="tel" placeholder="Номер телефона"></div>
-                <div class="form-right__inputs"><input type="email" placeholder="Email"></div>
-                <a class="form-right__btn" href="#">Записаться на обучение</a>
+                <div class="form-right__inputs "><input class="js-input" type="text" placeholder="Ваше имя"></div>
+                <div class="form-right__inputs "><input class="js-input js-input-phone" type="tel" placeholder="Номер телефона"></div>
+                <div class="form-right__inputs "><input class="js-input js-input-email" type="email" placeholder="Email"></div>
+                <button class="form-right__btn btn" type="submit">Записаться на обучение</button>
               </form>
             </div>
           </div>
@@ -289,6 +318,11 @@
                   <a href="#" class="logo__link"><img src="i/logo.svg" alt="logo img" class="logo__img"></a>
                 </div>
                   <p class="logo__title footer-logo__title">Студия обучению 3D моделирования, дизайна, анимации и визуализации.</p>
+                  <div class="address">
+                    <a name="phone" href="tel:+380506698758" class="phone">+380 50 66 98 758</a>
+                    <a name="email" href="mailto:dmytro.selikhov@gmail.com" class="email">dmytro.selikhov@gmail.com</a>
+                    <p name="street" class="street">Киев, Богдана Лещины 17/34</p>
+                  </div>
               </div>
 
               <nav class="footer-top__menu">
@@ -339,6 +373,7 @@
     <script src="js/app.js"></script>
     <script src="js/isMobile.js"></script>
     <script src="js/timer.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/top_btn.js"></script>
   </body>
 </html>
